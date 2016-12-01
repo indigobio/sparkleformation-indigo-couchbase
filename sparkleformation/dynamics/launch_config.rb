@@ -32,28 +32,6 @@ SparkleFormation.dynamic(:launch_config) do |_name, _config = {}|
     description 'The run list to run when Chef client is invoked'
   end
 
-  parameters(:chef_validation_client_name) do
-    type 'String'
-    allowed_pattern "[\\x20-\\x7E]*"
-    default _config[:chef_validation_client_name] || 'product_dev-validator'
-    description 'Chef validation client name; see https://docs.chef.io/chef_private_keys.html'
-    constraint_description 'can only contain ASCII characters'
-  end
-
-  parameters(:chef_server) do
-    type 'String'
-    allowed_pattern "[\\x20-\\x7E]*"
-    constraint_description 'can only contain ASCII characters'
-    default _config[:chef_server] || 'https://api.opscode.com/organizations/product_dev'
-  end
-
-  parameters(:chef_version) do
-    type 'String'
-    allowed_pattern "[\\x20-\\x7E]*"
-    constraint_description 'can only contain ASCII characters'
-    default _config[:chef_version] || 'latest'
-  end
-
   parameters(:root_volume_size) do
     type 'Number'
     min_value '1'

@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/gswallow/sparkle-pack-aws-ebs-volumes.git
-  revision: e3c34d33de42f07520da1e295eb234798294cab2
+  revision: 0da6dda692cb7075b5c9eec59aff198439fd338d
   specs:
     sparkle-pack-aws-ebs-volumes (0.0.1)
       aws-sdk-core (~> 2)
 
 GIT
   remote: https://github.com/gswallow/sparkle-pack-aws-instance-types.git
-  revision: fdb26f14169311915fc6eba63c7d2d300b55177e
+  revision: 55e71f7a664e0eb84773e3ab01af7f44b56c9d18
   specs:
     sparkle-pack-aws-instance-types (0.0.1)
 
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/gswallow/sparkle-pack-aws-my-security-groups.git
-  revision: f0a9cc9ffb58207e64778340a4f3248a3d7bf9b9
+  revision: e48861773036d9de87f2d217964d2c984a7e9ad1
   specs:
     sparkle-pack-aws-my-security-groups (0.0.1)
       aws-sdk-core (~> 2)
@@ -34,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/gswallow/sparkle-pack-aws-my-subnets.git
-  revision: 7cae06d8ac7c980a860dea9ef86743e3647638ce
+  revision: a489699ed6473168a7ef9579c5f481595dec35b7
   specs:
     sparkle-pack-aws-my-subnets (0.0.1)
       aws-sdk-core (~> 2)
@@ -53,7 +53,7 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     attribute_struct (0.3.4)
       bogo (>= 0.1.31, < 0.3.0)
-    aws-sdk-core (2.6.29)
+    aws-sdk-core (2.6.30)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
     aws-sigv4 (1.0.0)
