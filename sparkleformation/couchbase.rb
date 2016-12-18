@@ -2,7 +2,7 @@ ENV['volume_count']       ||= '2'
 ENV['volume_size']        ||= '10'
 ENV['sg']                 ||= 'private_sg'
 ENV['chef_run_list']      ||= 'role[base],role[couchbase_server]'
-ENV['notification_topic'] ||= "#{ENV['org']}-#{ENV['environment']}-deregister-chef-node"
+ENV['notification_topic'] ||= "#{ENV['org']}_#{ENV['environment']}_deregister_chef_node"
 
 
 SparkleFormation.new('couchbase').load(:base, :chef_base, :trusty_ami, :ssh_key_pair).overrides do
