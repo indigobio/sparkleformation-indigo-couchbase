@@ -5,7 +5,7 @@ ENV['chef_run_list']      ||= 'role[base],role[couchbase_server]'
 ENV['notification_topic'] ||= "#{ENV['org']}_#{ENV['environment']}_deregister_chef_node"
 
 
-SparkleFormation.new('couchbase').load(:base, :chef_base, :trusty_ami, :ssh_key_pair).overrides do
+SparkleFormation.new('couchbase').load(:base, :chef_base, :trusty_ami, :ssh_key_pair, :git_rev_outputs).overrides do
   description <<"EOF"
 Couchbase EC2 instance, configured by Chef.  Route53 record: memcached.#{ENV['private_domain']}.
 EOF
